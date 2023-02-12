@@ -1,0 +1,33 @@
+.tasks_container {
+  background-color: #fafafa;
+  display: flex;
+  margin: 20px 20px 20px 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  position: relative;
+}
+
+.tasks_container_day {
+  background-color: rgb(73, 73, 113);
+  color: white;
+  width: 70px;
+  text-transform: uppercase;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px 0 0 10px;
+  min-width: 70px;
+}
+
+@media screen and (max-width: 600px) {
+  .tasks_container {
+    flex-direction: column;
+  }
+
+  .tasks_container_day {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    height: 45px;
+  }
+}

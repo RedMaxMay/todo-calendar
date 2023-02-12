@@ -1,0 +1,36 @@
+.task {
+  background-color: rgb(220, 255, 220);
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.task_delete_btn {
+  display: none;
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  background-color: rgb(255, 195, 195);
+  font-size: 75%;
+  top: -15px;
+  right: -15px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  transform: rotate(45deg);
+}
+
+.task_delete_btn:hover {
+  transform: rotate(225deg);
+}
+
+.task:hover .task_delete_btn {
+  display: block;
+}
+
+.isImportantStyle {
+  background-color: rgb(255, 225, 198);
+}

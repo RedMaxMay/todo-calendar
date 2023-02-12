@@ -1,0 +1,37 @@
+.task_day {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  width: 100%;
+}
+
+.task_day_delete_btn {
+  display: none;
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  background-color: rgb(255, 195, 195);
+  font-size: 75%;
+  top: -15px;
+  right: -15px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  transform: rotate(45deg);
+}
+
+.task_day_delete_btn:hover {
+  transform: rotate(225deg);
+}
+
+.task_day:hover .task_day_delete_btn {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .task_day {
+    flex-direction: column;
+  }
+}

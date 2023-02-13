@@ -1,8 +1,11 @@
 import React from "react";
+import { useTodoContext } from "../Context/todoContext";
 import s from "./style.module.css";
 
-export default function Task({ id, description, isImportant, deleteTask }) {
+export default function Task({ id, description, isImportant }) {
   const flag = isImportant ? s.isImportantStyle : "";
+
+  const { deleteTask } = useTodoContext();
 
   return (
     <div>

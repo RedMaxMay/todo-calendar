@@ -1,7 +1,11 @@
 import React from "react";
+import { useTodoContext } from "../Context/todoContext";
 import s from "./style.module.css";
 
-export default function TaskForm({ addTask }) {
+export default function TaskForm() {
+
+  const {addTask} = useTodoContext()
+
   return (
     <form className={s.form} onSubmit={addTask}>
       <div className={s.form_wrap}>

@@ -1,12 +1,11 @@
 import React from "react";
+import { useTodoContext } from "../Context/todoContext";
 import TaskDay from "../TaskDay";
 import s from "./style.module.css";
 
-export default function TasksContainer({
-  tasks,
-  deleteTask,
-  deleteAllDayTasks,
-}) {
+export default function TasksContainer() {
+  const { tasks } = useTodoContext();
+
   const mon = tasks.filter((task) => task.day === "Mon");
   const tue = tasks.filter((task) => task.day === "Tue");
   const wed = tasks.filter((task) => task.day === "Wed");
@@ -20,77 +19,49 @@ export default function TasksContainer({
       {mon[0] && (
         <div className={s.tasks_container}>
           <div className={s.tasks_container_day}>Mon</div>
-          <TaskDay
-            tasks={mon}
-            deleteTask={deleteTask}
-            deleteAllDayTasks={deleteAllDayTasks}
-          />
+          <TaskDay tasks={mon} />
         </div>
       )}
 
       {tue[0] && (
         <div className={s.tasks_container}>
           <div className={s.tasks_container_day}>Tue</div>
-          <TaskDay
-            tasks={tue}
-            deleteTask={deleteTask}
-            deleteAllDayTasks={deleteAllDayTasks}
-          />
+          <TaskDay tasks={tue} />
         </div>
       )}
 
       {wed[0] && (
         <div className={s.tasks_container}>
           <div className={s.tasks_container_day}>Wed</div>
-          <TaskDay
-            tasks={wed}
-            deleteTask={deleteTask}
-            deleteAllDayTasks={deleteAllDayTasks}
-          />
+          <TaskDay tasks={wed} />
         </div>
       )}
 
       {thu[0] && (
         <div className={s.tasks_container}>
           <div className={s.tasks_container_day}>Thu</div>
-          <TaskDay
-            tasks={thu}
-            deleteTask={deleteTask}
-            deleteAllDayTasks={deleteAllDayTasks}
-          />
+          <TaskDay tasks={thu} />
         </div>
       )}
 
       {fri[0] && (
         <div className={s.tasks_container}>
           <div className={s.tasks_container_day}>Fri</div>
-          <TaskDay
-            tasks={fri}
-            deleteTask={deleteTask}
-            deleteAllDayTasks={deleteAllDayTasks}
-          />
+          <TaskDay tasks={fri} />
         </div>
       )}
 
       {sat[0] && (
         <div className={s.tasks_container}>
           <div className={s.tasks_container_day}>Sat</div>
-          <TaskDay
-            tasks={sat}
-            deleteTask={deleteTask}
-            deleteAllDayTasks={deleteAllDayTasks}
-          />
+          <TaskDay tasks={sat} />
         </div>
       )}
 
       {sun[0] && (
         <div className={s.tasks_container}>
           <div className={s.tasks_container_day}>Sun</div>
-          <TaskDay
-            tasks={sun}
-            deleteTask={deleteTask}
-            deleteAllDayTasks={deleteAllDayTasks}
-          />
+          <TaskDay tasks={sun} />
         </div>
       )}
     </div>

@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/todo-calendar/static/css/main.e1f1fc9b.css",
-    "main.js": "/todo-calendar/static/js/main.b851294a.js",
+    "main.css": "/todo-calendar/static/css/main.65f1f513.css",
+    "main.js": "/todo-calendar/static/js/main.7618ff02.js",
     "index.html": "/todo-calendar/index.html",
-    "main.e1f1fc9b.css.map": "/todo-calendar/static/css/main.e1f1fc9b.css.map",
-    "main.b851294a.js.map": "/todo-calendar/static/js/main.b851294a.js.map"
+    "main.65f1f513.css.map": "/todo-calendar/static/css/main.65f1f513.css.map",
+    "main.7618ff02.js.map": "/todo-calendar/static/js/main.7618ff02.js.map"
   },
   "entrypoints": [
-    "static/css/main.e1f1fc9b.css",
-    "static/js/main.b851294a.js"
+    "static/css/main.65f1f513.css",
+    "static/js/main.7618ff02.js"
   ]
 }
